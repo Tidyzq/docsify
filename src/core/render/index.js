@@ -26,6 +26,8 @@ function executeScript() {
   setTimeout(_ => {
     window.__EXECUTE_RESULT__ = new Function(code)()
   }, 0)
+  
+  return true
 }
 
 function formatUpdated(html, updated, fn) {
