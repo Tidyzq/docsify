@@ -53,8 +53,8 @@ function renderMain(html) {
   // Execute script
   if (
     this.config.executeScript !== false &&
-    typeof window.Vue !== 'undefined' &&
-    !executeScript()
+    !executeScript() &&
+    typeof window.Vue !== 'undefined'
   ) {
     setTimeout(_ => {
       const vueVM = window.__EXECUTE_RESULT__
